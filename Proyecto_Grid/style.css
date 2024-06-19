@@ -47,18 +47,79 @@ header {
   border-radius: 10px;
   background-color: var(--blue-color);
   margin: auto;
-  color: var(--primary-color) ;
+  color: var(--primary-color);
   height: 100%;
   width: 100%;
 }
-header > h1{
-    margin: auto;
-    text-align: center;
-    font-size: 26px;
-    margin-top: 15px;
+header > h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 15px;
 }
 header > p {
-    margin: auto;
-    margin: 100px 0;
-    padding: 10px;
+  margin: auto;
+  margin: 150px 0;
+  padding: 10px;
 }
+.school {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.student {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+main {
+  text-align: center;
+  margin: auto;
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  height: 100%;
+  width: 100%;
+}
+main > h2 {
+  text-align: center;
+  margin: auto;
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.time {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.alumni {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+footer {
+  grid-column: span 2;
+  background-color: var(--orange-color);
+  color: var(--primary-color);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+footer > button{
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
