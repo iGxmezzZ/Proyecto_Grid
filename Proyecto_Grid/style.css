@@ -116,11 +116,53 @@ footer {
   padding: 0 10px;
   border-radius: 10px;
 }
-footer > button{
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border-radius: 10px;
+footer > button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
-/* Hacerlo responsive con mediasqueries */
+/* Hacerlo responsive con mediasqueries.
+Ajustar bien tamaño imagenes con pantalla completa*/
+@media (max-width: 700px) {
+  body {
+    padding: 1em;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  main{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border: 1px solid var(--blue-color);
+  }
+ main > h2 {
+  border: none;
+  display: grid;
+  place-items: center;
+ }
+  .time {
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    grid-row: span 2;
+  }
+  .alumni {
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  footer{
+    display: grid;
+    place-items: center;
+  }
+}
